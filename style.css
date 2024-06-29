@@ -1,0 +1,199 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  background-image: url("./Untitled\ design.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  height: 100vh; /* Volledige schermhoogte */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px; /* Aangepast voor kleinere container */
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px; /* Extra ruimte onder de h1 */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#auth-section,
+#tracker-section {
+  margin-top: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="number"],
+form button {
+  margin: 5px 0;
+  padding: 10px;
+  width: 90%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="number"] {
+  font-family: fantasy;
+  border-radius: 0px;
+  background-color: rgb(210, 212, 214);
+  outline: none;
+}
+form button {
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  margin-top: 10px;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+#logout {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+  width: 100%;
+  box-sizing: border-box; /* Zorg ervoor dat padding binnen de breedte valt */
+}
+
+#logout:hover {
+  background-color: #c82333;
+}
+
+#admin-login-form {
+  display: none;
+  margin-top: 20px;
+}
+
+#admin-section {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#delete-all-users {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box; /* Zorg ervoor dat padding binnen de breedte valt */
+}
+
+#delete-all-users:hover {
+  background-color: #c82333;
+}
+
+#user-list {
+  margin-bottom: 20px;
+}
+
+#users-sets-info {
+  list-style-type: none;
+  padding: 0;
+}
+
+#users-sets-info li {
+  margin-bottom: 10px;
+}
+#show-register {
+  color: rgb(0, 0, 0);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+}
+p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+#show-login {
+  color: rgb(0, 0, 0);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+}
+.welcome-message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  animation: fade-in 0.5s, fade-out 0.5s 2.5s forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.verzend {
+  background-color: red;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 20px;
+  color: #fff;
+  font-weight: bolder;
+}
+#workout-list {
+  border-top: solid rgb(182, 179, 179) 1px;
+  border-bottom: solid rgb(182, 179, 179) 1px;
+  line-height: 5;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  list-style: none;
+}

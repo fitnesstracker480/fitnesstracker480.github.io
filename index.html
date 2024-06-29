@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fitness Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Fitness Tracker</h1>
+
+      <div id="auth-section">
+        <!-- Login Form -->
+        <form id="login-form">
+          <input
+            type="text"
+            id="login-username"
+            placeholder="Gebruikersnaam"
+            required
+          />
+          <input
+            type="password"
+            id="login-password"
+            placeholder="Wachtwoord"
+            required
+          />
+          <button type="submit">Inloggen</button>
+          <p>
+            Nog geen account? <br />
+            <a href="#" id="show-register">Registreer hier </a>
+            <br />
+            <br />
+            Creator - Almoustafa
+          </p>
+        </form>
+
+        <!-- Register Form (Initially hidden) -->
+        <form id="register-form" style="display: none">
+          <input
+            type="text"
+            id="register-username"
+            placeholder="Gebruikersnaam"
+            required
+          />
+          <input
+            type="password"
+            id="register-password"
+            placeholder="Wachtwoord"
+            required
+          />
+          <button type="submit">Registreren</button>
+          <p>
+            Al een account? <br />
+            <a href="#" id="show-login">Log hier in</a>
+            <br />
+            <br />
+            Creator - Almoustafa
+          </p>
+        </form>
+
+        <!-- Admin Login Form -->
+        <form id="admin-login-form">
+          <input
+            type="text"
+            id="admin-username"
+            placeholder="Admin Gebruikersnaam"
+            required
+          />
+          <input
+            type="password"
+            id="admin-password"
+            placeholder="Admin Wachtwoord"
+            required
+          />
+          <button type="submit">Admin Login</button>
+        </form>
+      </div>
+
+      <!-- Tracker Section (Initially hidden) -->
+      <div id="tracker-section" style="display: none">
+        <form id="workout-form">
+          <input type="text" id="workout" placeholder="Voer je workout in" />
+          <input type="number" id="sets" placeholder="Sets" min="1" required />
+          <input
+            type="number"
+            id="reps"
+            placeholder="Reps per set"
+            min="1"
+            required
+          />
+          <button type="submit">Voeg toe</button>
+        </form>
+        <p id="workout-list"></p>
+        <h2>Totale Sets: <span id="total-sets">0</span></h2>
+        <button id="logout">Uitloggen</button>
+      </div>
+    </div>
+  </body>
+</html>
